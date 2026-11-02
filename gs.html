@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS교육센터 - AI와 함께하는 실무 프로그래밍</title>
+    <!-- 구글 폰트 적용 -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS 스타일 설정 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2a5298;
+        }
+
+        .course-card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ee5253;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1>GS교육센터</h1>
+        <p>AI 에이전트와 함께하는 가장 쉽고 빠른 프로그래밍 입문</p>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <div class="container">
+        <h2 class="section-title">개설 교육 과정</h2>
+        
+        <div class="course-grid">
+            <!-- HTML 과정 -->
+            <div class="course-card">
+                <h3>HTML</h3>
+                <p>웹사이트의 뼈대를 만드는 기초 마크업 언어 학습 및 시맨틱 구조 설계</p>
+                <a href="#apply" class="btn" onclick="applyCourse('HTML')">과정 신청</a>
+            </div>
+
+            <!-- CSS 과정 -->
+            <div class="course-card">
+                <h3>CSS</h3>
+                <p>웹페이지를 아름답고 반응형으로 꾸며주는 스타일링 및 레이아웃 기술</p>
+                <a href="#apply" class="btn" onclick="applyCourse('CSS')">과정 신청</a>
+            </div>
+
+            <!-- JavaScript 과정 -->
+            <div class="course-card">
+                <h3>JavaScript</h3>
+                <p>웹사이트에 생동감을 불어넣는 동적 기능 구현과 프로그래밍 논리 학습</p>
+                <a href="#apply" class="btn" onclick="applyCourse('JavaScript')">과정 신청</a>
+            </div>
+
+            <!-- Python 과정 -->
+            <div class="course-card">
+                <h3>Python</h3>
+                <p>데이터 분석과 인공지능 기초 활용을 위한 직관적이고 강력한 프로그래밍 언어</p>
+                <a href="#apply" class="btn" onclick="applyCourse('Python')">과정 신청</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <p>&copy; 2026 GS교육센터. All rights reserved.</p>
+    </footer>
+
+    <!-- 자바스크립트 인터랙션 영역 -->
+    <script>
+        function applyCourse(courseName) {
+            alert(`[GS교육센터] ${courseName} 과정에 관심을 가져주셔서 감사합니다! AI 상담사가 곧 연락드리겠습니다.`);
+        }
+    </script>
+
+</body>
+</html>
